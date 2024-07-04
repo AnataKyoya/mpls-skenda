@@ -290,3 +290,11 @@ function download(v, filename) {
 let reels = () => {
     download("./reels.png", "reels-frame.png");
 };
+
+let imgs = document.querySelectorAll("img");
+
+for (let i = 0; i < imgs.length; i++) {
+    if (!imgs[i].classList.contains("pattern")) {
+        imgs[i].src = "mpls_merah.png";
+    }
+}
