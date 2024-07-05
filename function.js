@@ -295,6 +295,8 @@ let imgs = document.querySelectorAll("img");
 
 for (let i = 0; i < imgs.length; i++) {
     if (!imgs[i].classList.contains("pattern")) {
-        imgs[i].src = "mpls_merah.png";
+        if (!imgs[i].classList.contains("photoUser")) {
+            imgs[i].src = "mpls_merah.png";
+        }
     }
 }
